@@ -4,16 +4,16 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
-![Progress](https://img.shields.io/badge/Progress-86%25-brightgreen)
-![Modules](https://img.shields.io/badge/Modules-6%2F7-blue)
+![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen)
+![Modules](https://img.shields.io/badge/Modules-7%2F7-blue)
 ![Chapters](https://img.shields.io/badge/Chapters-40-blueviolet)
-![Questions](https://img.shields.io/badge/Questions-183-orange)
+![Questions](https://img.shields.io/badge/Questions-312-orange)
 
 > 独立存在，不与工作台、能力库或其他项目绑定。内容摘录自公开资源（题仓库、课程、书），统一格式。
 
 ## 🎯 先看总览
 
-███████████████████████████████░░░░░ **86%**（6/7 模块）
+███████████████████████████████████ **100%**（7/7 模块）
 
 | 状态 | 含义 |
 | --- | --- |
@@ -28,7 +28,7 @@
 | **04 回测严谨性 ★** | IC 显著性、CPCV、DSR、PBO、t≥3 门槛 | ✅ [进入](04_backtest_rigor/README.md) | 7 | 30 | 6 |
 | **05 贝叶斯** | 推断、PyMC、分层模型、regime | ✅ [进入](05_bayesian/README.md) | 4 | 20 | 4 |
 | **06 组合与风险** | 协方差、VaR/CVaR、回撤、Kelly、归因 | ✅ [进入](06_portfolio_stats/README.md) | 5 | 25 | 4 |
-| **07 题卡** | 概率/统计/时序题 + 考前速查 | ⏳ 待填 | — | — | — |
+| **07 题卡** | 全模块汇总题库（129 题含答案 + 10 综合模拟） | ✅ [进入](07_practice/README.md) | 6 张 | 129 | — |
 
 ★ = 核心模块（买方 QS 最看重的区分度）
 
@@ -61,6 +61,8 @@ flowchart LR
 **05 贝叶斯**（4 章）→ [模块目录](05_bayesian/README.md)：推断 · PyMC · 分层 · Regime
 
 **06 组合与风险**（5 章）→ [模块目录](06_portfolio_stats/README.md)：协方差 · VaR/CVaR · 回撤 · Kelly · 归因
+
+**07 汇总题卡**（129 题含答案）→ [模块目录](07_practice/README.md)：概率 30 · 推断 22 · 时序 22 · 严谨性 20 · 贝叶斯+组合 25 · 综合模拟 10
 
 ## 🚀 快速开始
 
