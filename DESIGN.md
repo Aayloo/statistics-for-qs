@@ -23,7 +23,7 @@ statistics-for-qs/
 ├── README.md                    模块总览 + 学习路径
 ├── DESIGN.md                    本文件
 ├── 01_probability ✅ 已完成       概率与组合（12 章 + 48 题 + 10 图）
-├── 02_inference ⏳ 待填           统计推断（P0）
+├── 02_inference ✅ 已完成         统计推断（MLE/假设检验/回归/PCA/多重检验，5 章 + 30 题 + 5 图）
 │   ├── 01_参数估计               MLE/GMM、置信区间
 │   ├── 02_假设检验               t/z、p 值、功效、I/II 类错误
 │   ├── 03_回归推断               OLS 假设、多重共线性、HAC/稳健 SE、Fama-MacBeth

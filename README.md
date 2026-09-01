@@ -31,7 +31,7 @@ statistics-for-qs/
 ├── README.md               ← 本文件
 ├── DESIGN.md               设计 + 缺口分析
 ├── 01_probability          概率与组合：计数、贝叶斯、分布、期望技巧、CLT、随机游走/鞅、经典题+40题卡
-├── 02_inference            统计推断：MLE、假设检验、回归/Fama-MacBeth、PCA、多重检验
+├── 02_inference ✅         统计推断：MLE、假设检验、回归/Fama-MacBeth、PCA、多重检验
 ├── 03_time_series          时间序列：平稳性、自相关、ARMA、协整、GARCH、Kalman/HMM、GBM
 ├── 04_backtest_rigor ★     回测严谨性：IC显著性、泄漏控制、CPCV、DSR、PBO、t≥3门槛
 ├── 05_bayesian             贝叶斯：推断、PyMC、分层模型、regime switching
