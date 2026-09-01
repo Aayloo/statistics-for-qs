@@ -207,3 +207,87 @@ axes[1].grid(alpha=0.25)
 axes[1].legend()
 fig.tight_layout()
 save(fig, "gamblers_ruin.png")
+
+
+# 7) PDF 与 CDF（正态）
+fig, axes = plt.subplots(1, 2, figsize=(12, 4.6))
+x = np.linspace(-4, 4, 600)
+pdf = stats.norm.pdf(x)
+axes[0].plot(x, pdf, lw=1.8, color="#2f5597")
+axes[0].fill_between(x, pdf, where=(x >= -1) & (x <= 1), color="#c9a227", alpha=0.55)
+axes[0].set_title("P(−1 ≤ X ≤ 1) = 阴影面积 ≈ 68.3%")
+axes[0].set_xlabel("x")
+axes[0].set_ylabel("f(x)")
+axes[0].grid(alpha=0.25)
+cdf = stats.norm.cdf(x)
+axes[1].plot(x, cdf, lw=1.8, color="#2f5597")
+for v in (-1, 1):
+    axes[1].axvline(v, color="#c0392b", ls="--", lw=1)
+axes[1].axhline(stats.norm.cdf(-1), color="#1e8449", ls=":", lw=1)
+axes[1].axhline(stats.norm.cdf(1), color="#1e8449", ls=":", lw=1)
+axes[1].set_title("CDF：F(x) = P(X ≤ x)，F(1)−F(−1) = 0.683")
+axes[1].set_xlabel("x")
+axes[1].set_ylabel("F(x)")
+axes[1].grid(alpha=0.25)
+fig.tight_layout()
+save(fig, "pdf_cdf.png")
+
+
+# 8) 正态 68-95-99.7
+fig, ax = plt.subplots(figsize=(9, 5))
+x = np.linspace(-4, 4, 800)
+pdf = stats.norm.pdf(x)
+ax.plot(x, pdf, lw=1.8, color="#2f5597")
+for k, c, label in ((1, "#c9a227", "68.3%"), (2, "#e67e22", "95.4%"), (3, "#c0392b", "99.7%")):
+    ax.fill_between(x, pdf, where=(x >= -k) & (x <= k), color=c, alpha=0.35)
+    ax.text(k + 0.08, stats.norm.pdf(0) * 0.55 - k * 0.02, f"±{k}σ  {label}", fontsize=11)
+ax.set_title("正态分布：68-95-99.7 法则")
+ax.set_xlabel("x（单位：σ）")
+ax.set_ylabel("f(x)")
+ax.grid(alpha=0.25)
+fig.tight_layout()
+save(fig, "normal_areas.png")
+
+
+# 9) 指数分布无记忆性
+fig, ax = plt.subplots(figsize=(9, 5))
+t = np.linspace(0, 7, 500)
+lam = 0.8
+s = 2.0
+h = 2.0
+ax.plot(t, np.exp(-lam * t), lw=2, color="#2f5597", label="生存函数 S(t)=P(X>t)=e^(−λt)")
+ax.fill_between(t, 0, np.exp(-lam * t), where=(t >= s + h), color="#c0392b", alpha=0.4)
+ax.axvspan(s + h, 7, color="#c0392b", alpha=0.12)
+ax.axvline(s, color="#1e8449", ls="--", lw=1)
+ax.axvline(s + h, color="#1e8449", ls="--", lw=1)
+ax.annotate(
+    "红色面积 = P(X > s+h)",
+    xy=(s + h + 0.3, np.exp(-lam * (s + h)) / 2),
+    fontsize=10,
+    color="#c0392b",
+)
+ax.text(3.8, 0.9, "P(X>s+h | X>s) = P(X>h)\n（已存活 s 后，剩余寿命分布不变）", fontsize=10.5)
+ax.set_xlabel("t")
+ax.set_ylabel("P(X > t)")
+ax.set_ylim(0, 1.05)
+ax.grid(alpha=0.25)
+ax.legend(loc="upper right")
+fig.tight_layout()
+save(fig, "memoryless.png")
+
+
+# 10) 相关系数散点（教学用）
+fig, axes = plt.subplots(2, 2, figsize=(11, 9))
+rng = np.random.default_rng(2)
+for ax, rho in zip(axes.flat, (0.9, 0.5, 0.0, -0.8)):
+    z1, z2 = rng.normal(size=(2000, 2)).T
+    x = z1
+    y = rho * z1 + np.sqrt(1 - rho**2) * z2
+    ax.scatter(x, y, s=3, alpha=0.35, color="#2f5597")
+    ax.set_title(f"ρ = {rho:+.1f}")
+    ax.set_xlim(-4, 4)
+    ax.set_ylim(-4, 4)
+    ax.grid(alpha=0.2)
+fig.suptitle("相关系数 ρ 的直观：线性关系的方向与强度（ρ=0 不代表独立）", fontsize=13)
+fig.tight_layout()
+save(fig, "correlation_scatter.png")
