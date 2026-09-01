@@ -4,16 +4,16 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
-![Progress](https://img.shields.io/badge/Progress-29%25-brightgreen)
-![Modules](https://img.shields.io/badge/Modules-2%2F7-blue)
-![Chapters](https://img.shields.io/badge/Chapters-17-blueviolet)
-![Questions](https://img.shields.io/badge/Questions-78-orange)
+![Progress](https://img.shields.io/badge/Progress-86%25-brightgreen)
+![Modules](https://img.shields.io/badge/Modules-6%2F7-blue)
+![Chapters](https://img.shields.io/badge/Chapters-40-blueviolet)
+![Questions](https://img.shields.io/badge/Questions-183-orange)
 
 > 独立存在，不与工作台、能力库或其他项目绑定。内容摘录自公开资源（题仓库、课程、书），统一格式。
 
 ## 🎯 先看总览
 
-██████████░░░░░░░░░░░░░░░░░░░░░░░░░ **29%**（2/7 模块）
+███████████████████████████████░░░░░ **86%**（6/7 模块）
 
 | 状态 | 含义 |
 | --- | --- |
@@ -24,10 +24,10 @@
 | --- | --- | --- | --- | --- | --- |
 | **01 概率与组合** | 计数、贝叶斯、分布、期望技巧、CLT、随机游走/鞅、经典题、不等式、几何概率 | ✅ [进入](01_probability/README.md) | 12 | 48 | 10 |
 | **02 统计推断** | MLE、假设检验、回归/Fama-MacBeth、PCA、多重检验 | ✅ [进入](02_inference/README.md) | 5 | 30 | 5 |
-| **03 时间序列计量** | 平稳性、协整、GARCH、Kalman/HMM、GBM | ⏳ 待填 | — | — | — |
-| **04 回测严谨性 ★** | IC 显著性、CPCV、DSR、PBO、t≥3 门槛 | ⏳ 待填 | — | — | — |
-| **05 贝叶斯** | 推断、PyMC、分层模型、regime | ⏳ 待填 | — | — | — |
-| **06 组合与风险** | 协方差、VaR/CVaR、回撤、Kelly、归因 | ⏳ 待填 | — | — | — |
+| **03 时间序列计量** | 平稳性、协整、GARCH、Kalman/HMM、GBM | ✅ [进入](03_time_series/README.md) | 7 | 30 | 5 |
+| **04 回测严谨性 ★** | IC 显著性、CPCV、DSR、PBO、t≥3 门槛 | ✅ [进入](04_backtest_rigor/README.md) | 7 | 30 | 6 |
+| **05 贝叶斯** | 推断、PyMC、分层模型、regime | ✅ [进入](05_bayesian/README.md) | 4 | 20 | 4 |
+| **06 组合与风险** | 协方差、VaR/CVaR、回撤、Kelly、归因 | ✅ [进入](06_portfolio_stats/README.md) | 5 | 25 | 4 |
 | **07 题卡** | 概率/统计/时序题 + 考前速查 | ⏳ 待填 | — | — | — |
 
 ★ = 核心模块（买方 QS 最看重的区分度）
@@ -53,6 +53,14 @@ flowchart LR
 **01 概率与组合**（12 章）：[01 计数与组合](01_probability/01_计数与组合.md) · [02 条件概率与贝叶斯](01_probability/02_条件概率与贝叶斯.md) · [03 随机变量与分布](01_probability/03_随机变量与分布.md) · [04 期望方差与矩方法](01_probability/04_期望方差与矩方法.md) · [05 联合分布与条件期望](01_probability/05_联合分布协方差与条件期望.md) · [06 LLN 与 CLT](01_probability/06_大数定律与中心极限定理.md) · [07 随机游走与鞅](01_probability/07_随机游走与鞅.md) · [08 经典概率题](01_probability/08_经典概率题专题.md) · [09 题卡](01_probability/09_面试题卡.md) · [10 概率不等式](01_probability/10_概率不等式.md) · [11 几何概率](01_probability/11_几何概率.md) · [12 分布关系与泊松过程](01_probability/12_分布关系与泊松过程.md)
 
 **02 统计推断**（5 章）：[01 参数估计](02_inference/01_参数估计.md) · [02 假设检验](02_inference/02_假设检验.md) · [03 回归推断](02_inference/03_回归推断.md) · [04 降维与因子](02_inference/04_降维与因子.md) · [05 多重检验](02_inference/05_多重检验.md) · [06 题卡](02_inference/06_面试题卡.md)
+
+**03 时间序列计量**（7 章）→ [模块目录](03_time_series/README.md)：平稳性 · 自相关 · ARMA · 协整 · GARCH · 状态空间 · 随机过程
+
+**04 回测严谨性 ★**（7 章）→ [模块目录](04_backtest_rigor/README.md)：IC 显著性 · 泄漏控制 · CPCV · DSR/PSR · PBO · 多重检验 · 整体检验
+
+**05 贝叶斯**（4 章）→ [模块目录](05_bayesian/README.md)：推断 · PyMC · 分层 · Regime
+
+**06 组合与风险**（5 章）→ [模块目录](06_portfolio_stats/README.md)：协方差 · VaR/CVaR · 回撤 · Kelly · 归因
 
 ## 🚀 快速开始
 

@@ -29,7 +29,7 @@ statistics-for-qs/
 │   ├── 03_回归推断               OLS 假设、多重共线性、HAC/稳健 SE、Fama-MacBeth
 │   ├── 04_降维与因子              PCA/SVD、因子模型
 │   └── 05_多重检验               Bonferroni、BH-FDR、Harvey-Liu t≥3
-├── 03_time_series ⏳ 待填         时间序列计量（P0）
+├── 03_time_series ✅ 已完成       时间序列计量（7 章 + 30 题 + 5 图）
 │   ├── 01_平稳性                 ADF/KPSS、单位根、随机游走
 │   ├── 02_自相关                 ACF/PACF、Ljung-Box、Hurst、方差比
 │   ├── 03_ARMA/回归              预测回归、VAR、稳健 SE
@@ -37,7 +37,7 @@ statistics-for-qs/
 │   ├── 05_波动率                 GARCH、已实现波动率、EWMA
 │   ├── 06_状态空间               Kalman、HMM regime
 │   └── 07_随机过程               GBM、泊松过程、几何布朗运动
-├── 04_backtest_rigor ★ ⏳ 待填    回测严谨性（P0，买方最认）
+├── 04_backtest_rigor ★ ✅ 已完成  回测严谨性（7 章 + 30 题 + 6 图）
 │   ├── 01_IC显著性               IC/IR、HAC t 统计、IC 衰减
 │   ├── 02_泄漏控制               look-ahead、purge/embargo、walk-forward
 │   ├── 03_CPCV                   Combinatorial Purged CV
@@ -45,18 +45,18 @@ statistics-for-qs/
 │   ├── 05_PBO                    CSCV 过拟合概率
 │   ├── 06_多重检验应用           BH-FDR、t≥3、因子动物园
 │   └── 07_整体检验              White's Reality Check、RAS
-├── 05_bayesian ⏳ 待填            贝叶斯（P2 差异化）
+├── 05_bayesian ✅ 已完成          贝叶斯（4 章 + 20 题 + 4 图）
 │   ├── 01_推断                  先验/后验、共轭
 │   ├── 02_PyMC                  MCMC 实操
 │   ├── 03_分层模型                hierarchical 因子
 │   └── 04_Regime                贝叶斯状态切换
-├── 06_portfolio_stats ⏳ 待填     组合与风险统计（P1）
+├── 06_portfolio_stats ✅ 已完成   组合与风险统计（5 章 + 25 题 + 4 图）
 │   ├── 01_协方差估计             样本/收缩/EWMA/因子模型
 │   ├── 02_VaR/CVaR               尾部风险（接 GARCH）
 │   ├── 03_回撤                   回撤分布
 │   ├── 04_Kelly                  Kelly 仓位
 │   └── 05_归因                   业绩归因、IC-Sharpe
-└── 07_practice ⏳ 待填            题卡（贯穿）
+└── 07_practice ⏳ 待填            题卡（贯穿，汇总各模块题卡）
     ├── 概率题 / 统计题 / 时序题 / 考前速查
 ```
 
