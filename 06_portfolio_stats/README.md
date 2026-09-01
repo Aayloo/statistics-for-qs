@@ -16,13 +16,7 @@ Alpha 研究回答"赚不赚"，组合统计回答"亏多少、怎么不亏死"�
 
 ## 🗺️ 学习路径
 
-```mermaid
-flowchart LR
-    A[01 协方差估计] --> B[02 VaR/CVaR]
-    B --> C[03 回撤]
-    A --> D[04 Kelly]
-    B --> E[05 归因与 IC-Sharpe]
-```
+![学习路径](../assets/path_06.png)
 
 ## 📚 章节地图
 

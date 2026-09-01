@@ -16,17 +16,7 @@
 
 ## 🗺️ 学习路径
 
-```mermaid
-flowchart LR
-    A[01 IC 显著性] --> B[02 泄漏控制]
-    B --> C[03 CPCV]
-    C --> D[04 DSR/PSR]
-    C --> E[05 PBO]
-    A --> F[06 多重检验应用]
-    D --> G[07 整体检验]
-    E --> G
-    F --> G
-```
+![学习路径](../assets/path_04.png)
 
 ## 📚 章节地图
 

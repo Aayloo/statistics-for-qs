@@ -16,12 +16,7 @@
 
 ## 🗺️ 学习路径
 
-```mermaid
-flowchart LR
-    A[01 贝叶斯推断] --> B[02 PyMC 实操]
-    B --> C[03 分层模型]
-    A --> D[04 Regime]
-```
+![学习路径](../assets/path_05.png)
 
 ## 📚 章节地图
 
